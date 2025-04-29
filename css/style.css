@@ -28,7 +28,7 @@ body {
   color:#fff;
   overflow-x: hidden;
 }
-
+/* Navbar */
 .navbar li{
   position: relative;
 }
@@ -46,7 +46,6 @@ body {
 .navbar .home-active::after {
   width: 100%;
 }
-
 /* Home */
 .home{
   background-image: url(../img/home3.jpg);
@@ -55,7 +54,6 @@ body {
   height: 100vh;
   padding-top: 100px;
 }
-
 /* Movies */
 .heading {
   font-weight: 500;
@@ -65,29 +63,21 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-
+/* Movies and Coming Cards */
 .cards img {
-  transition: transform 0.3s ease; /* تأثير الانتقال السلس */
+  transition: transform 0.3s ease; 
 }
-
 .cards img:hover {
-  transform: scale(1.05); /* تكبير الكارد بنسبة 5% عند الـ hover */
+  transform: scale(1.05); 
 }
-
-
-
+/* News */
 .news input::placeholder {
   color: var(--text-color);
   font-size: 0.8rem;
   font-weight: 400;
 }
-
-
-
-
+/* Icons Footer */
 .social-icons a:hover i {
   background-color: #ff0000;
   color: #fff
-
 }
