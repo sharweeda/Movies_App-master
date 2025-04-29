@@ -8,6 +8,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 /* custom scroll bar */
 html::-webkit-scrollbar {
@@ -25,8 +26,26 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #020307;
   color:#fff;
+  overflow-x: hidden;
 }
 
+.navbar li{
+  position: relative;
+}
+.navbar a::after{
+  content: '';
+  position: absolute;
+  background-color: #ff2c1f;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -4px;
+  transition: 0.4s all linear;
+}
+.navbar a:hover::after,
+.navbar .home-active::after {
+  width: 100%;
+}
 
 /* Home */
 .home{
@@ -48,9 +67,27 @@ body {
 }
 
 
+.cards img {
+  transition: transform 0.3s ease; /* تأثير الانتقال السلس */
+}
+
+.cards img:hover {
+  transform: scale(1.05); /* تكبير الكارد بنسبة 5% عند الـ hover */
+}
+
+
 
 .news input::placeholder {
   color: var(--text-color);
   font-size: 0.8rem;
   font-weight: 400;
+}
+
+
+
+
+.social-icons a:hover i {
+  background-color: #ff0000;
+  color: #fff
+
 }
