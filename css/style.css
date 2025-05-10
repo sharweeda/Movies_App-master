@@ -1,26 +1,10 @@
-*{
+**{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   scroll-padding-top: 2rem;
-}
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-/* custom scroll bar */
-html::-webkit-scrollbar {
-  width: 0.5rem;
-  background-color: #020307;
-}
-html::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
-  border-radius: 5rem;
-}
-section {
-  padding: 4.5rem 1.5rem;
 }
 body {
   font-family: 'Poppins', sans-serif;
